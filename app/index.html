@@ -22,6 +22,44 @@
     <!-- endbuild -->
   </head>
   <body>
+  <div class="hero-unit">
+        <form>
+            <header id="header">
+            
+                <h1>myBlog</h1>
+            
+                <div id="bar">
+                    
+                </div>
+                <input id="title" placeholder="Blog post title..." autofocus="">
+                <input id="post" placeholder="Tell your story..." autofocus="">
+                <input id="author" placeholder="Who are you?..." autofocus="">
+                <input id="tags" placeholder="Include searchable tags or keywords here..." autofocus="">
+                <button id="button">Submit</button>
+
+
+                <div class="post_collection">
+
+                <ul></ul>
+
+                       
+
+
+                </div>
+            </header>
+        </form>
+    </div>
+
+                <script type="text/x-handlebars-template" id="feed_template">
+{{#each post}}
+    <li> 
+        <h2>{{ title }}</h2> 
+        <p>{{ content }}</p>
+        <small>{{ author }}</small>
+        <a href="#">{{ tags }}</a>
+    </li>
+{{/each}}
+</script>
 
 
 
@@ -37,7 +75,6 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/models/post_model.js"></script>
         <script src="scripts/collections/post_collection.js"></script>
-        <script src="scripts/views/post_view.js"></script>
         <script src="scripts/views/list_view.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/template.js"></script>
