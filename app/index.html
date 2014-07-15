@@ -35,7 +35,7 @@
                 <input id="post" placeholder="Tell your story..." autofocus="">
                 <input id="author" placeholder="Who are you?..." autofocus="">
                 <input id="tags" placeholder="Include searchable tags or keywords here..." autofocus="">
-                <button id="button">Submit</button>
+                <button class="submitBtn">Submit</button>
 
 
                 <div class="post_collection">
@@ -53,10 +53,10 @@
                 <script type="text/x-handlebars-template" id="feed_template">
 {{#each post}}
     <li> 
-        <h2>{{ title }}</h2> 
-        <p>{{ content }}</p>
-        <small>{{ author }}</small>
-        <a href="#">{{ tags }}</a>
+        <h2>{{{ title }}}</h2> 
+        <p>{{{ content }}}</p>
+        <small>{{{ author }}}</small>
+        <a href="#">{{{ tags }}}</a>
     </li>
 {{/each}}
 </script>
