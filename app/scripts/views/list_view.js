@@ -23,8 +23,11 @@
   },
 
   render: function(){
-    var rendered = Handlebars.templates.post({posts: this.collection.toJSON()});
+    var rendered = Handlebars.templates.post({post: this.collection.toJSON()});
+	console.log(this.collection.toJSON());
     this.$el.find(".post_collection ul").html(rendered);
+	console.log("you are in");
+	console.log(rendered);
     return this;
   },
 
@@ -48,9 +51,9 @@
 
 
 });
-
-new ListView( { collection: all_posts } );
-
+all_posts.fetch().done(function (){
+	new ListView( { collection: all_posts } );
+});
 
 
 
