@@ -23,7 +23,7 @@
   </head>
   <body>
   <div class="hero-unit">
-        <form>
+        <form id="blog_input">
             <header id="header">
             
                 <h1>myBlog</h1>
@@ -50,16 +50,7 @@
         </form>
     </div>
 
-                <script type="text/x-handlebars-template" id="feed_template">
-{{#each post}}
-    <li> 
-        <h2>{{{ title }}}</h2> 
-        <p>{{{ content }}}</p>
-        <small>{{{ author }}}</small>
-        <a href="#">{{{ tags }}}</a>
-    </li>
-{{/each}}
-</script>
+   
 
 
 
@@ -75,9 +66,10 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/models/post_model.js"></script>
         <script src="scripts/collections/post_collection.js"></script>
+        <script src="scripts/template.js"></script>
         <script src="scripts/views/list_view.js"></script>
         <script src="scripts/main.js"></script>
-        <script src="scripts/template.js"></script>
+        
         <!-- endbuild -->
 </body>
 </html>
