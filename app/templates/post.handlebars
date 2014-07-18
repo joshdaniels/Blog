@@ -1,8 +1,21 @@
 {{#each post}}
-    <li> 
-        <h2>{{ title }}</h2> 
-        <p>{{ content }}</p>
-        <small>{{ author }}</small>
-        <a href="#">{{ tags }}</a>
-    </li>
-{{/each}}
+<div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+    </div>
+    <div class="card-header">
+      {{{ title }}}
+      {{{ author }}}
+      {{{ date }}}
+    </div>
+    <div class="card-copy" >
+      <p>{{{ content }}}</p>
+    </div>
+    <div class="card-stats">
+      <ul>
+        <li>{{{ tags }}}</li>
+        
+      </ul>
+    </div>
+  </div>
+  {{/each}}

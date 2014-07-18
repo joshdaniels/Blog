@@ -25,9 +25,9 @@
   render: function(){
     var rendered = Handlebars.templates.post({post: this.collection.toJSON()});
 	console.log(this.collection.toJSON());
-    this.$el.find(".post_collection ul").html(rendered);
+    this.$el.find(".post_collection").html(rendered);
 	console.log("you are in");
-	console.log(rendered);
+	// console.log(rendered);
     return this;
   },
 
@@ -37,7 +37,7 @@
  
     var temp_post = new Post({
       title:  $('#title').val(),
-      content: $('#post').val(),
+      content: $('#edit').val(),
       author:  $('#author').val(),
       tags: $('#tags').val(),
 	  status: 'Published',
@@ -45,6 +45,7 @@
 	});
 	
 	all_posts.add(temp_post).save();
+	this.$el.find( '#blog_input' ).trigger( 'reset' );
 
    }
 
