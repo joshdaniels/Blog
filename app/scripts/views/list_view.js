@@ -5,7 +5,7 @@
 
   // className: "",
 
-  el: '.hero-unit',
+  el: 'body',
 
   events: {
 
@@ -79,46 +79,3 @@ all_posts.fetch().done(function (){
 
 
 
-// all_posts.fetch().done(function (){
-// 	
-// 	console.log("got the data you asked for");
-// 	var note = new Post();
-// all_posts.add(note).save();
-// console.log("and i returned it to the server.free of charge.");
-// });
-
-
-
-	// Grab all form data 
-	// Create new instance of your model
-	// Add new model instance to your collection
-	// Save your model - this will save it to the database && re-render the page
-
-//   },
-
-
- 
-
-// create_post:function(e){
-//   e.preventDefault();
-//   var temp_post,
-//     title = $('#title').val(),
-//     content = $('#post').val(),
-//     author = $('#author').val(),
-//     tags = $('#tags').val(),
-
-//   temp_post = new Post({
-//     title: title,
-//     author: author,
-//     content: content,
-//     tags: tags.replace(/\s+/g, '').split(','),
-//     status: 'Published',
-//     date: new Date().toJSON().slice(0,10)
-//   });
-
-//   all_posts.add(temp_post).save();
-
-//   this.$el.find('form').trigger('reset');
-// }, 
-
-// });

@@ -6,11 +6,45 @@
 
 
 body {
-  background-image:url("../images/background.jpg");
+  background-image:url("../images/background.png");
+
   background-attachment:fixed;
   background-size:cover;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+}
+.third_title{
+  font-family:'Rancho';
+  margin-top: 47px;
+font-size: 78px;
+}
+.logo{
+margin-left: 623px;
+margin-top: 52px;
+}
+.first{
+  margin-top: 70px;
+  font-family: "Nixie One";
+font-size: 37px;
+text-align: center;
+color:white;
+}
+h1{
+
+
+font-family: "Nixie One";
+font-size: 37px;
+text-align: center;
+color:white;
+}
+.refills_button{
+margin-left: 651px;
+margin-top: 80px;
+}
+#demo{
+width: 433px;
+height: 737px;
+float: left;
 }
 $sliding-menu-border-color: $dark-gray;
 $sliding-menu-background: lighten($sliding-menu-border-color, 5);
@@ -34,11 +68,12 @@ $sliding-menu-color-hover: #fff;
 }
 
 .sliding-menu-content {
+  background-image:url("../images/slide.png");
   @include position(fixed, 0px auto 0px 0px);
   @include size(450px 100%);
   @include transform(translateX(-450px));
   @include transition(all .25s linear);
-  background: $sliding-menu-background;
+background-color:transparent;
   z-index: 999999;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -77,7 +112,7 @@ $sliding-menu-color-hover: #fff;
 
 .hero-unit {
   margin: 50px auto 0 auto;
-  width: 600px;
+  width: 862px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
@@ -88,30 +123,70 @@ $sliding-menu-color-hover: #fff;
     font-size: 60px;
     line-height: 1;
     letter-spacing: -1px;
+
  }
+}
+
+input{
+  opacity:0.3;
+}
+
+.submitBtn{
+margin-left: 171px;
+margin-bottom: 20px;
 }
 
 #title{
   height: 42px;
-  width: 408px;
+  width: 388px;
   border-radius: 10px;
   background-color: currentcolor;
   border: none;
   margin-left: 20px;
+  border-top: solid 5px black;
+}
+#edit{
+  outline: 0px;
+border-color: rgb(37, 37, 40);
+width: 388px;
+float: right;
+margin-bottom: 3px;
+bottom: 689px;
+height: 690px;
+border-top: solid 5px black;
 }
 
 #post{
   width: 475px;
   height: 300px;
   border-radius: 10px
+  
 }
 
 #author{
-  width: 128px;
+  height: 42px;
+width: 389px;
+border-radius: 10px;
+background-color: currentcolor;
+border: none;
+margin-left: 20px;
+margin-top: 10px;
+border-top: solid 5px black;
 }
 
-#tags{
 
+#tags{
+height: 42px;
+width: 389px;
+border-radius: 10px;
+background-color: currentcolor;
+border: none;
+margin-left: 20px;
+margin-top: 10px;
+border-top: solid 5px black;
+}
+#title input.placeholder{
+  color:white;
 }
 
 #button{
@@ -132,7 +207,7 @@ color:#DA70D6;
   $card-stats-color: lighten($base-accent-color, 10);
 
   @include transition (all 0.2s ease-in-out);
-  background-color: $card-background;
+  background-color:white;
   border-radius: $base-border-radius;
   border: $card-border;
   margin-bottom: $base-line-height;
@@ -152,7 +227,7 @@ color:#DA70D6;
     img {
       width: 100%;
       @include transition (all 0.2s ease-in-out);
-      background: $card-image-background;
+      background-image:url("../images/strip.png");
       border-top-left-radius: $base-border-radius;
       border-top-right-radius: $base-border-radius;
     }
@@ -233,7 +308,7 @@ color:#DA70D6;
     background-color: $card-hover-background;
     
     .card-image img {
-      background: $card-image-hover-background;
+    // background-image:url("../images/strip.png");
     }
   
     .card-header {

@@ -8,7 +8,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 function program1(depth0,data) {
   
   var buffer = "", stack1, helper;
-  buffer += "\n<div class=\"card\">\n    <div class=\"card-image\">\n      <img src=\"https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png\" alt=\"\">\n    </div>\n    <div class=\"card-header\">\n      ";
+  buffer += "\n<div class=\"card\">\n    <div class=\"card-image\">\n      <img src=\"http://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png\" alt=\"\">\n    </div>\n    <div class=\"card-header\">\n      ";
   if (helper = helpers.title) { stack1 = helper.call(depth0, {hash:{},data:data}); }
   else { helper = (depth0 && depth0.title); stack1 = typeof helper === functionType ? helper.call(depth0, {hash:{},data:data}) : helper; }
   if(stack1 || stack1 === 0) { buffer += stack1; }

@@ -18,7 +18,7 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-
+    
     <link href="../bower_components/froala/css/froala_editor.css" rel="stylesheet" type="text/css"/>
 
     <!-- endbuild -->
@@ -29,44 +29,34 @@
     <!-- endbuild -->
   </head>
 
-  <body>
+  <body >
+
   <button type="button" class="js-menu-trigger sliding-menu-button">
   <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/menu.png" alt="">
 </button>
 
-<nav class="js-menu sliding-menu-content">
+<nav class="js-menu sliding-menu-content blear" >
  <form id="blog_input">
             <header id="header">
             
-              <h1>myBlog</h1>
+              
             
-                <div id="bar">
+                
                     
                 </div>
+                <button class="submitBtn">Submit</button>
                 <input id="title" placeholder="Blog post title..." autofocus="">
-                <textarea id="edit" placeholder="Tell your story..." autofocus=""></textarea>
                 <input id="author" placeholder="Who are you?..." autofocus="">
                 <input id="tags" placeholder="Include searchable tags or keywords here..." autofocus="">
-                <button class="submitBtn">Submit</button>
-</div>
+                <textarea id="edit" placeholder="Tell your story..." autofocus=""></textarea>
+                
+
             </header>
         </form>
 </nav>
 
 <div class="js-menu-screen menu-screen"></div>
-  <div class="hero-unit">
-        
-
-                <div class="post_collection">
-
-                <ul></ul>
-
-                       
-
-
-                
-    </div>
-
+ 
    
 
 
@@ -74,14 +64,15 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/froala/js/froala_editor.min.js"></script>
+     <script src="../bower_components/blear/blear.js"></script>
+   <script src="../bower_components/froala/js/froala_editor.min.js"></script>
      <script src="../bower_components/froala/js/plugins/fonts/font_family.min.js"></script>
-     <script src="../bower_components/froala/js/plugins/colors.min.js"></script>
-     <script src="../bower_components/froala/js/plugins/video.min.js"></script>
-     <script src="../bower_components/froala/js/plugins/media_manager.min.js"></script>
+    
+   
+    
      <script src="../bower_components/froala/js/plugins/fonts/font_size.min.js"></script>
      <script src="../bower_components/froala/js/plugins/fonts/fonts.min.js"></script>
-    <script src="../bower_components/underscore/underscore.js"></script>
+     <script src="../bower_components/underscore/underscore.js"></script>
     <script src="../bower_components/backbone/backbone.js"></script>
     <script src="../bower_components/handlebars/handlebars.js"></script>
    
