@@ -68,7 +68,7 @@ $sliding-menu-color-hover: #fff;
 }
 
 .sliding-menu-content {
-  background-image:url("../images/slide.png");
+  background-image:url("../images/slided.png");
   @include position(fixed, 0px auto 0px 0px);
   @include size(450px 100%);
   @include transform(translateX(-450px));
@@ -76,6 +76,7 @@ $sliding-menu-color-hover: #fff;
 background-color:transparent;
   z-index: 999999;
   overflow-y: scroll;
+  opacity: 0.95;
   -webkit-overflow-scrolling: touch;
 
   li a {
@@ -129,6 +130,9 @@ background-color:transparent;
 
 input{
   opacity:0.3;
+}
+.froala-image-popup{
+  
 }
 
 .submitBtn{
@@ -214,6 +218,7 @@ color:#DA70D6;
   cursor: pointer;
   // box-shadow: 0 2px 4px darken($base-body-color, 10);
   position: relative;
+  opacity: 0.85;
 
   // @include media($large-screen) {
   //   @include span-columns(4);  

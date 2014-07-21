@@ -38,7 +38,7 @@
 <h1>The world wants to know.</h1>
 
 <button type="button" class="js-menu-trigger sliding-menu-button refills_button">Get Started</button>
-<a href="3rd.html" class="refills_button"><button>See It</button></a>
+<!-- <a href="3rd.html" class="refills_button"><button>See It</button></a> -->
 
 <nav class="js-menu sliding-menu-content blear" >
  <form id="blog_input">
@@ -58,19 +58,32 @@
 
             </header>
         </form>
+<div class="post_collection">
+<div class="froala-editor" style="top: 443.87847900390625px; left: 4px; right: auto;"><div class="froala-popup froala-video-popup" style="display: none;"><h4><span data-text="true">Insert video</span><i title="Cancel" class="fa fa-times" id="f-video-close-1"></i></h4><div class="f-popup-line"><textarea placeholder="Embeded code" id="f-video-textarea-1"></textarea></div><p class="or">or</p><div class="f-popup-line"><input type="text" placeholder="http://youtube.com/" id="f-video-input-1"><button data-text="true" class="f-ok" id="f-video-ok-1">OK</button></div></div><div class="froala-popup froala-link-popup" style="display: none;"><h4><span data-text="true">Insert link</span><a target="_blank" title="Open Link" class="f-external-link" href="#"><i class="fa fa-external-link"></i></a><i title="Cancel" class="fa fa-times" id="f-link-close-1"></i></h4><div class="f-popup-line"><input type="text" placeholder="http://www.example.com" class="f-lu " id="f-lu-1"></div><div class="f-popup-line"><input type="checkbox" id="f-checkbox-1"> <label data-text="true" for="f-checkbox-1">Open in new tab</label><button data-text="true" type="button" class="f-ok" id="f-ok-1">OK</button><button type="button" data-text="true" class="f-ok f-unlink" id="f-unlink-1">UNLINK</button></div></div><div class="froala-popup froala-image-popup" style="display: block;"><h4><span data-text="true">Insert image</span><i title="Cancel" class="fa fa-times" id="f-image-close-1"></i></h4><div id="f-image-list-1"><div class="f-popup-line drop-upload"><div class="f-upload" id="f-upload-div-1"><strong data-text="true">Drop Image</strong><br>(<span data-text="true">or click</span>)<form target="frame-1" enctype="multipart/form-data" encoding="multipart/form-data" action="http://i.froala.com/upload" method="post" id="f-upload-form-1"><input id="f-file-upload-1" type="file" name="file" accept="image/*"></form></div></div><div class="f-popup-line"><label><span data-text="true">Enter URL</span>: </label><input id="f-image-url-1" type="text" placeholder="http://example.com"><button class="f-browse" id="f-browser-1" style="display: inline-block;"><i class="fa fa-search"></i></button><button data-text="true" class="f-ok" id="f-image-ok-1">OK</button></div></div><p class="f-progress" id="f-progress-1"><span></span></p></div><div class="froala-popup froala-image-editor-popup" style="display: none;"><div class="f-popup-line"><button class="fr-bttn" data-cmd="floatImageLeft" title="Float Left"><i class="fa fa-align-left"></i></button><button class="fr-bttn" data-cmd="floatImageNone" title="Float None"><i class="fa fa-align-justify"></i></button><button class="fr-bttn" data-cmd="floatImageRight" title="Float Right"><i class="fa fa-align-right"></i></button><button class="fr-bttn" data-cmd="linkImage" title="Insert Link"><i class="fa fa-link"></i></button><button class="fr-bttn" data-cmd="replaceImage" title="Replace Image"><i class="fa fa-exchange"></i></button><button class="fr-bttn" data-cmd="removeImage" title="Remove Image"><i class="fa fa-trash-o"></i></button></div><div class="f-popup-line f-image-alt"><label><span data-text="true">Title</span>: </label><input type="text"><button class="f-ok" data-text="true" data-cmd="setImageAlt" title="OK">OK</button></div></div></div>
+
 </nav>
 
 <div class="js-menu-screen menu-screen"></div>
+ <div class="hero-unit">
  
    
    
+
+                <ul></ul>
+
+                       
+
+
+                
+    </div>
+
+  
 
 
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/blear/blear.js"></script>
     <script src="../bower_components/froala/js/froala_editor.min.js"></script>
      <script src="../bower_components/froala/js/plugins/fonts/font_family.min.js"></script>
      <script src="../bower_components/froala/js/plugins/colors.min.js"></script>
@@ -86,11 +99,13 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
-          <script src="scripts/routes/home_route.js"></script>
+       
         <script src="scripts/models/post_model.js"></script>
         <script src="scripts/collections/post_collection.js"></script>
         <script src="scripts/template.js"></script>
         <script src="scripts/views/list_view.js"></script>
+        <script src="scripts/views/post_view.js"></script>
+           <script src="scripts/routes/home_route.js"></script>
         <script src="scripts/main.js"></script>
         
         <!-- endbuild -->

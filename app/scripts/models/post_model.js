@@ -1,17 +1,17 @@
 var Post = Backbone.Model.extend({
-	defaults:{
+  defaults:{
 
-	 title: "", 
+   title: "", 
   content: "", 
   date: "", 
   status: "", 
   author: "", 
   tags: [],
+  tried: false
 },
-  idattribute: "_id" ,
+  idAttribute: "_id" ,
 
   initialize: function (){
-  	console.log("a new post has been created.");
+    console.log("a new post has been created.");
   }
 });
-
