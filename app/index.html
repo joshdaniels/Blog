@@ -2,6 +2,7 @@
 <!doctype html>
 <html class="no-js">
   <head>
+  <script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
@@ -10,6 +11,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+   
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
     <link href='http://fonts.googleapis.com/css?family=Nixie+One|Poiret+One|Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link href="../bower_components/froala/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
@@ -30,7 +32,7 @@
     <!-- endbuild -->
   </head>
   <body >
-  <img class="logo" src="../images/logo.png"/>
+  <a href="/"> <img class="logo" src="../images/logo.png"/> </a>
 
 
  <h1 class="first">So,</h1>
@@ -41,43 +43,26 @@
 <!-- <a href="3rd.html" class="refills_button"><button>See It</button></a> -->
 
 <nav class="js-menu sliding-menu-content blear" >
- <form id="blog_input">
-            <header id="header">
-            
-              
-            
-                
-                    
-                </div>
-                <button class="submitBtn">Submit</button>
-                <input id="title" placeholder="Blog post title..." autofocus="">
-                <input id="author" placeholder="Who are you?..." autofocus="">
-                <input id="tags" placeholder="Include searchable tags or keywords here..." autofocus="">
-                <textarea id="edit" placeholder="Tell your story..." autofocus=""></textarea>
-                
+    <form id="blog_input">
+        <header id="header">
+            <button class="submitBtn">Submit</button>
+            <input id="title" placeholder="Blog post title..." autofocus="">
+            <input id="author" placeholder="Who are you?..." autofocus="">
+            <input id="tags" placeholder="Include searchable tags or keywords here..." autofocus="">
+            <textarea id="edit" placeholder="Tell your story..." autofocus=""></textarea>
+        </header> 
+    </form> 
 
-            </header>
-        </form>
-<div class="post_collection">
-<div class="froala-editor" style="top: 443.87847900390625px; left: 4px; right: auto;"><div class="froala-popup froala-video-popup" style="display: none;"><h4><span data-text="true">Insert video</span><i title="Cancel" class="fa fa-times" id="f-video-close-1"></i></h4><div class="f-popup-line"><textarea placeholder="Embeded code" id="f-video-textarea-1"></textarea></div><p class="or">or</p><div class="f-popup-line"><input type="text" placeholder="http://youtube.com/" id="f-video-input-1"><button data-text="true" class="f-ok" id="f-video-ok-1">OK</button></div></div><div class="froala-popup froala-link-popup" style="display: none;"><h4><span data-text="true">Insert link</span><a target="_blank" title="Open Link" class="f-external-link" href="#"><i class="fa fa-external-link"></i></a><i title="Cancel" class="fa fa-times" id="f-link-close-1"></i></h4><div class="f-popup-line"><input type="text" placeholder="http://www.example.com" class="f-lu " id="f-lu-1"></div><div class="f-popup-line"><input type="checkbox" id="f-checkbox-1"> <label data-text="true" for="f-checkbox-1">Open in new tab</label><button data-text="true" type="button" class="f-ok" id="f-ok-1">OK</button><button type="button" data-text="true" class="f-ok f-unlink" id="f-unlink-1">UNLINK</button></div></div><div class="froala-popup froala-image-popup" style="display: block;"><h4><span data-text="true">Insert image</span><i title="Cancel" class="fa fa-times" id="f-image-close-1"></i></h4><div id="f-image-list-1"><div class="f-popup-line drop-upload"><div class="f-upload" id="f-upload-div-1"><strong data-text="true">Drop Image</strong><br>(<span data-text="true">or click</span>)<form target="frame-1" enctype="multipart/form-data" encoding="multipart/form-data" action="http://i.froala.com/upload" method="post" id="f-upload-form-1"><input id="f-file-upload-1" type="file" name="file" accept="image/*"></form></div></div><div class="f-popup-line"><label><span data-text="true">Enter URL</span>: </label><input id="f-image-url-1" type="text" placeholder="http://example.com"><button class="f-browse" id="f-browser-1" style="display: inline-block;"><i class="fa fa-search"></i></button><button data-text="true" class="f-ok" id="f-image-ok-1">OK</button></div></div><p class="f-progress" id="f-progress-1"><span></span></p></div><div class="froala-popup froala-image-editor-popup" style="display: none;"><div class="f-popup-line"><button class="fr-bttn" data-cmd="floatImageLeft" title="Float Left"><i class="fa fa-align-left"></i></button><button class="fr-bttn" data-cmd="floatImageNone" title="Float None"><i class="fa fa-align-justify"></i></button><button class="fr-bttn" data-cmd="floatImageRight" title="Float Right"><i class="fa fa-align-right"></i></button><button class="fr-bttn" data-cmd="linkImage" title="Insert Link"><i class="fa fa-link"></i></button><button class="fr-bttn" data-cmd="replaceImage" title="Replace Image"><i class="fa fa-exchange"></i></button><button class="fr-bttn" data-cmd="removeImage" title="Remove Image"><i class="fa fa-trash-o"></i></button></div><div class="f-popup-line f-image-alt"><label><span data-text="true">Title</span>: </label><input type="text"><button class="f-ok" data-text="true" data-cmd="setImageAlt" title="OK">OK</button></div></div></div>
-
+    <div class="post_collection">
+        <div class='dan'>
+        </div>  
+    </div>
 </nav>
 
-<div class="js-menu-screen menu-screen"></div>
- <div class="hero-unit">
- 
-   
-   
-
-                <ul></ul>
-
-                       
-
-
-                
+    <div class="js-menu-screen menu-screen"></div>
+    <div class="hero-unit">
+     
     </div>
-
-  
 
 
 

@@ -1,4 +1,7 @@
-var Post = Backbone.Model.extend({
+var Post = Parse.Object.extend({
+  
+className: "Blog_posts",
+
   defaults:{
 
    title: "", 
@@ -9,9 +12,13 @@ var Post = Backbone.Model.extend({
   tags: [],
   tried: false
 },
-  idAttribute: "_id" ,
+  idAttribute: "objectId" ,
 
   initialize: function (){
     console.log("a new post has been created.");
   }
 });
+
+
+
+

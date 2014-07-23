@@ -148,7 +148,12 @@ margin-bottom: 20px;
   border: none;
   margin-left: 20px;
   border-top: solid 5px black;
+ 
 }
+ .fa-trash-o{
+  float:right;
+  color:#809BC4;
+ }
 #edit{
   outline: 0px;
 border-color: rgb(37, 37, 40);
@@ -176,6 +181,7 @@ border: none;
 margin-left: 20px;
 margin-top: 10px;
 border-top: solid 5px black;
+
 }
 
 
@@ -313,7 +319,7 @@ color:#DA70D6;
     background-color: $card-hover-background;
     
     .card-image img {
-    // background-image:url("../images/strip.png");
+    background-image:url("../images/strip.png");
     }
   
     .card-header {

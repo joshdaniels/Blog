@@ -1,15 +1,7 @@
-// console.log('The Iron Yard Rocks');
-// console.log(Backbone);
-// console.log(Handlebars);
-
-// $('.sliding-menu-content').blurjs({
-//  source: 'body',
-//  radius: 7,
-//  overlay: 'rgba(255,255,255,0.4)'
-// });
-// 
-
+Parse.initialize("M3R1Ribp4zznVw1Zglwu1xdrdKbCORwXNp9cZ5Iz", "CsPt2AejgyMf5vvEAL2XqcXeT0GNYQ9C4QOyKwx7");
 // Create an instance of my Collection
+
+
 var all_posts = new Feed();
 
 // Grab all my data from my server
@@ -18,13 +10,23 @@ all_posts.fetch().done(function (){
   // Define Global Router && Start History
   window.home_route = new MainRouter();
   Backbone.history.start();
-
-
+  
 });
 
+var AppView = function (){
 
+  this.showView = function(view) {
+    if (this.currentView){
+      //this.currentView.remove();
+    }
 
-  
+    this.currentView = view;
+    this.currentView.render();
+
+    $(".dan").html(this.currentView.el);
+  }
+
+}
 
    $(document).ready(function(){
   $('.js-menu-trigger').on('click touchstart', function(e){
