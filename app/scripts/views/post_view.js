@@ -8,7 +8,7 @@ var PostView = Backbone.View.extend({
 	},
 
 	initialize: function(a){
-	    this.options = a;
+	    this.options = a; ;
 	    this.render();
 	},
 
